@@ -1,0 +1,26 @@
+PODS:
+  - FontAwesome.swift (1.8.2)
+  - Realm (4.1.1):
+    - Realm/Headers (= 4.1.1)
+  - Realm/Headers (4.1.1)
+  - RealmSwift (4.1.1):
+    - Realm (= 4.1.1)
+
+DEPENDENCIES:
+  - FontAwesome.swift
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - FontAwesome.swift
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  FontAwesome.swift: 7938d6a03113ff3f39001bde7f50be8a0903d605
+  Realm: 25f0a8244cbb1c2271c922963ea8666fc2d8104d
+  RealmSwift: 9e2657b33764f80e4a4dffd6d440e24715782052
+
+PODFILE CHECKSUM: 68901fc173c36065a4ae1a2b84196905ddb1d55c
+
+COCOAPODS: 1.8.4
