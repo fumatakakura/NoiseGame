@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>424797859795-0hm1af53jg19d4vndpnfk040aljsvpkf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.424797859795-0hm1af53jg19d4vndpnfk040aljsvpkf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCwk8yfV31C16IVl_wERe4fiQx3pdoB39w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>424797859795</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.AudioTestProject</string>
+	<key>PROJECT_ID</key>
+	<string>soundgam-bc620</string>
+	<key>STORAGE_BUCKET</key>
+	<string>soundgam-bc620.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:424797859795:ios:50cfa83a2e1d3b01674926</string>
+	<key>DATABASE_URL</key>
+	<string>https://soundgam-bc620.firebaseio.com</string>
+</dict>
+</plist>

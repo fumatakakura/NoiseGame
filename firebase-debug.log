@@ -1,0 +1,49 @@
+[debug] [2020-01-13T07:27:55.341Z] ----------------------------------------------------------------------
+[debug] [2020-01-13T07:27:55.344Z] Command:       /usr/local/bin/node /Users/taka/.npm-global/bin/firebase init
+[debug] [2020-01-13T07:27:55.344Z] CLI Version:   7.8.1
+[debug] [2020-01-13T07:27:55.344Z] Platform:      darwin
+[debug] [2020-01-13T07:27:55.344Z] Node Version:  v10.16.3
+[debug] [2020-01-13T07:27:55.350Z] Time:          Mon Jan 13 2020 15:27:55 GMT+0800 (GMT+08:00)
+[debug] [2020-01-13T07:27:55.350Z] ----------------------------------------------------------------------
+[debug] [2020-01-13T07:27:55.350Z] 
+[debug] [2020-01-13T07:27:55.360Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-13T07:27:55.360Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/taka/Desktop/Swift/Homework/NoiseGame
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-01-13T07:28:07.756Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-01-13T07:28:08.862Z] <<< HTTP RESPONSE 200
+[info] i  Using project soundgame-c866f (SoundGame)
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2020-01-13T07:29:07.351Z] >>> HTTP REQUEST GET https://soundgame-c866f.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2020-01-13T07:29:08.768Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-13T07:29:09.166Z] Error: EISDIR: illegal operation on a directory, open '/Users/taka/Desktop/Swift/Homework/NoiseGame'
+    at Object.openSync (fs.js:443:3)
+    at Object.writeFileSync (fs.js:1194:35)
+    at Config.writeProjectFile (/Users/taka/.npm-global/lib/node_modules/firebase-tools/lib/config.js:179:8)
+    at /Users/taka/.npm-global/lib/node_modules/firebase-tools/lib/init/features/database.js:25:23
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: An unexpected error has occurred.

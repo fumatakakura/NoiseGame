@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import RealmSwift
+import Firebase
 
 class ModalViewController: UIViewController {
     
@@ -15,8 +15,6 @@ class ModalViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     var score = ""
-    
-    var itemList: Results<ScoreModel>!
     
 
     override func viewDidLoad() {
@@ -26,7 +24,7 @@ class ModalViewController: UIViewController {
         
     }
     
-    //モーダル解除
+
     @IBAction func didClickBitton(_ sender: UIButton) {
         
         dismiss(animated: true, completion: nil)
@@ -35,25 +33,15 @@ class ModalViewController: UIViewController {
     
     //登録ボタン
     @IBAction func didClickButton(_ sender: UIButton) {
-        
-        let name = textField.text
-        let score = Int(label.text!)
-        
-        let realm = try! Realm()
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
-        let scoreModel = ScoreModel()
-        
-        scoreModel.name = name!
-        scoreModel.score = score!
-        
-        try! realm.write {
-            realm.add(scoreModel)
+        let db = Firestore.firestore()
+        db.collection("score").addDocument(data: ["name" : textField.text!, "score" : Int(label.text!)]){error in
+            if let err = error {
+                print(err.localizedDescription)
+            } else {
+                print("登録完了")
+            }
         }
-        
-        
-        
         performSegue(withIdentifier: "toFirst", sender: nil)
     }
     
-
 }

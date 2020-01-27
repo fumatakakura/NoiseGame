@@ -7,11 +7,13 @@
 //
 
 import UIKit
-import RealmSwift
 import FontAwesome_swift
+import Firebase
 
 
 class RankingViewController: UIViewController {
+    
+    var rankings: [Ranking] = []
     
     //スコア
     @IBOutlet weak var label1: UILabel!
@@ -29,24 +31,40 @@ class RankingViewController: UIViewController {
     @IBOutlet weak var label3rd: UILabel!
     
 
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let db = Firestore.firestore()
+        
 
-        let realm = try! Realm()
+        db.collection("score").order(by: "score", descending: true).addSnapshotListener { (querySnapshot, error) in
+            guard let documents = querySnapshot?.documents else {
+                return
+            }
+            
+            var results: [Ranking] = []
+            for document in documents {
+                let name = document.get("name") as! String
+                let score = document.get("score") as! Int
+                let rank = Ranking(name: name, score: score)
+                
+                results.append(rank)
+            }
+            
+            self.rankings = results
+                        
+            //スコアランキング
+            self.label1.text = String(self.rankings[0].score)
+            self.label2.text = String(self.rankings[1].score)
+            self.label3.text = String(self.rankings[2].score)
+            
+            //名前ランキング
+            self.nameLabel1.text = self.rankings[0].name
+            self.nameLabel2.text = self.rankings[1].name
+            self.nameLabel3.text = self.rankings[2].name
+        }
         
-        let result = realm.objects(ScoreModel.self).sorted(byKeyPath: "score", ascending: false)
-        
-        //スコアランキング
-        label1.text = String(result[0].score)
-        label2.text = String(result[1].score)
-        label3.text = String(result[2].score)
-        
-        //名前ランキング
-        nameLabel1.text = result[0].name
-        nameLabel2.text = result[1].name
-        nameLabel3.text = result[2].name
+
         
         //冠アイコン
         label1st.font = UIFont.fontAwesome(ofSize: 50, style: .solid)

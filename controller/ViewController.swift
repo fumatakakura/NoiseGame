@@ -12,9 +12,6 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
     
     
     var maxDb = 0
-    
-    //タイマー用
-    
     var count = 3
 
     
@@ -31,14 +28,14 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
         
     }
     
-    //タイマー用
+
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        //画面が表示されたらタイマーを動かす
+
         createTimer()
     }
     
-    //タイマーの作成
+
     func createTimer(){
 
         let timer = Timer.scheduledTimer(timeInterval: 1.0,
@@ -50,7 +47,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
 
     }
     
-    //タイマーの処理
+
        @objc func timerAction(sender:Timer){
 
             secondLabel.text = String(count)
@@ -59,8 +56,7 @@ class ViewController: UIViewController, AVAudioRecorderDelegate, AVAudioPlayerDe
                 sender.invalidate()
                 Record()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
-                    // 10秒後に実行したい処理
-                    print("10秒経過")
+
                     self.stop()
                     
                     let score = self.updateMonitorDb()

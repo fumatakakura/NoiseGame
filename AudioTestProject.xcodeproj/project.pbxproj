@@ -15,14 +15,17 @@
 		3B4EEB0D238E91B00000B1F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4EEB0B238E91B00000B1F0 /* LaunchScreen.storyboard */; };
 		3B6FDBCF23924E960024CF55 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6FDBCE23924E960024CF55 /* RankingViewController.swift */; };
 		3B9A81F8238FC5B100249615 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9A81F7238FC5B100249615 /* FirstViewController.swift */; };
+		3BB7646C23C6EF2C001A7BC9 /* beautiful font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BB7646823C6EB2F001A7BC9 /* beautiful font.ttf */; };
+		3BDEB2DB23C44CB500531FFC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BDEB2DA23C44CB500531FFC /* GoogleService-Info.plist */; };
+		3BDEB2DD23C4518C00531FFC /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDEB2DC23C4518C00531FFC /* Score.swift */; };
+		3BE46BEE23CA98E5007A825E /* HowToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE46BED23CA98E4007A825E /* HowToViewController.swift */; };
 		3BE850692391026F00896573 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE850682391026F00896573 /* FinalViewController.swift */; };
 		3BE8506B2391565D00896573 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE8506A2391565D00896573 /* ModalViewController.swift */; };
-		3BE85071239184D000896573 /* ScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE85070239184D000896573 /* ScoreModel.swift */; };
 		49312F3B3F4E8BBD50CEC81B /* Pods_AudioTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD164C7246E4B818394E114D /* Pods_AudioTestProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3B4EEAFD238E91AA0000B1F0 /* AudioTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4EEAFD238E91AA0000B1F0 /* dBオンライン.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dBオンライン.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4EEB00238E91AA0000B1F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B4EEB02238E91AA0000B1F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3B4EEB04238E91AA0000B1F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,9 +35,12 @@
 		3B4EEB0E238E91B00000B1F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B6FDBCE23924E960024CF55 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
 		3B9A81F7238FC5B100249615 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		3BB7646823C6EB2F001A7BC9 /* beautiful font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "beautiful font.ttf"; sourceTree = "<group>"; };
+		3BDEB2DA23C44CB500531FFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3BDEB2DC23C4518C00531FFC /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
+		3BE46BED23CA98E4007A825E /* HowToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToViewController.swift; sourceTree = "<group>"; };
 		3BE850682391026F00896573 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 		3BE8506A2391565D00896573 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
-		3BE85070239184D000896573 /* ScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModel.swift; sourceTree = "<group>"; };
 		60D8B3DD4FFAA26415F0B7B9 /* Pods-AudioTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioTestProject.release.xcconfig"; path = "Target Support Files/Pods-AudioTestProject/Pods-AudioTestProject.release.xcconfig"; sourceTree = "<group>"; };
 		95D55697CCBC8B3A92868423 /* Pods-AudioTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioTestProject.debug.xcconfig"; path = "Target Support Files/Pods-AudioTestProject/Pods-AudioTestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		AD164C7246E4B818394E114D /* Pods_AudioTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioTestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +61,7 @@
 		3B4EEAF4238E91A90000B1F0 = {
 			isa = PBXGroup;
 			children = (
+				3BB7646A23C6EF08001A7BC9 /* Resources */,
 				3BE8506D2391844900896573 /* controller */,
 				3BE8506C2391843000896573 /* objects */,
 				3B4EEAFF238E91AA0000B1F0 /* AudioTestProject */,
@@ -67,7 +74,7 @@
 		3B4EEAFE238E91AA0000B1F0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B4EEAFD238E91AA0000B1F0 /* AudioTestProject.app */,
+				3B4EEAFD238E91AA0000B1F0 /* dBオンライン.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,14 +88,31 @@
 				3B4EEB09238E91B00000B1F0 /* Assets.xcassets */,
 				3B4EEB0B238E91B00000B1F0 /* LaunchScreen.storyboard */,
 				3B4EEB0E238E91B00000B1F0 /* Info.plist */,
+				3BDEB2DA23C44CB500531FFC /* GoogleService-Info.plist */,
 			);
 			path = AudioTestProject;
+			sourceTree = "<group>";
+		};
+		3BB7646A23C6EF08001A7BC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3BB7646B23C6EF16001A7BC9 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3BB7646B23C6EF16001A7BC9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3BB7646823C6EB2F001A7BC9 /* beautiful font.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		3BE8506C2391843000896573 /* objects */ = {
 			isa = PBXGroup;
 			children = (
-				3BE85070239184D000896573 /* ScoreModel.swift */,
+				3BDEB2DC23C4518C00531FFC /* Score.swift */,
 			);
 			path = objects;
 			sourceTree = "<group>";
@@ -101,6 +125,7 @@
 				3BE850682391026F00896573 /* FinalViewController.swift */,
 				3BE8506A2391565D00896573 /* ModalViewController.swift */,
 				3B6FDBCE23924E960024CF55 /* RankingViewController.swift */,
+				3BE46BED23CA98E4007A825E /* HowToViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -141,7 +166,7 @@
 			);
 			name = AudioTestProject;
 			productName = AudioTestProject;
-			productReference = 3B4EEAFD238E91AA0000B1F0 /* AudioTestProject.app */;
+			productReference = 3B4EEAFD238E91AA0000B1F0 /* dBオンライン.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -182,7 +207,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BB7646C23C6EF2C001A7BC9 /* beautiful font.ttf in Resources */,
 				3B4EEB0D238E91B00000B1F0 /* LaunchScreen.storyboard in Resources */,
+				3BDEB2DB23C44CB500531FFC /* GoogleService-Info.plist in Resources */,
 				3B4EEB0A238E91B00000B1F0 /* Assets.xcassets in Resources */,
 				3B4EEB08238E91AA0000B1F0 /* Main.storyboard in Resources */,
 			);
@@ -240,10 +267,11 @@
 				3BE850692391026F00896573 /* FinalViewController.swift in Sources */,
 				3B4EEB05238E91AA0000B1F0 /* ViewController.swift in Sources */,
 				3B4EEB01238E91AA0000B1F0 /* AppDelegate.swift in Sources */,
-				3BE85071239184D000896573 /* ScoreModel.swift in Sources */,
+				3BE46BEE23CA98E5007A825E /* HowToViewController.swift in Sources */,
 				3B4EEB03238E91AA0000B1F0 /* SceneDelegate.swift in Sources */,
 				3BE8506B2391565D00896573 /* ModalViewController.swift in Sources */,
 				3B9A81F8238FC5B100249615 /* FirstViewController.swift in Sources */,
+				3BDEB2DD23C4518C00531FFC /* Score.swift in Sources */,
 				3B6FDBCF23924E960024CF55 /* RankingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,16 +418,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = M38X2J3RK6;
 				INFOPLIST_FILE = AudioTestProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.AudioTestProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "dBオンライン";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -409,16 +440,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = M38X2J3RK6;
 				INFOPLIST_FILE = AudioTestProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.AudioTestProject;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "dBオンライン";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -6,7 +6,9 @@ target 'AudioTestProject' do
   use_frameworks!
 
   # Pods for AudioTestProject
-    pod 'RealmSwift'
     pod 'FontAwesome.swift'
-
+    pod 'Firebase/Analytics'
+    pod 'Firebase/Core'
+    pod 'Firebase/Firestore'
+    pod 'IQKeyboardManagerSwift'
 end
